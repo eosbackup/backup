@@ -10,7 +10,7 @@ cd $WORKDIR
 numOfFiles=$(ls *.db | wc -l)
 echo $numOfFiles
 
-while [[ numOfFiles -gt 5 ]]
+while [[ numOfFiles -gt 0 ]]
 do
 	echo 'deleting old files'
 	oldest=$(ls -1t  *.db | tail -1 )
